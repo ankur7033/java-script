@@ -35,3 +35,18 @@ obj.greeting2 = function(){
 }
 console.log(obj.greeting2())
 console.log(obj)
+
+
+// Object destruction
+
+const course = {
+    coursename :"js in hindi",
+    price : 999,
+    courseInstructor:"hitesh"
+}
+
+const{courseInstructor:instructor}=course
+console.log(instructor)
+
+const{courseInstructor}=course
+console.log(courseInstructor)

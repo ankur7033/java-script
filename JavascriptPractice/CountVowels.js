@@ -1,6 +1,6 @@
 let str = "raam aam khata hai"
 
-let isVowel = function isBool(char){
+let isVowel = function(char){
     let st = "AEIOUaeiou"
     for(let i =0;i<st.length;i++){
         if (char == st.charAt(i))return true;
