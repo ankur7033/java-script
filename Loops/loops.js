@@ -31,5 +31,11 @@ for(const key in obj){
 // using 'For in ' in array
 const array = [2,3,4,5,6,7,8,8,9]
 for(const element in array){
-    console.log(element)
+    console.log(element)   // it will print all index.
+    console.log(array[element]);
+}
+
+// using 'For in' on map
+for(const [key,value] in map){
+    console.log(key)  // does not return anything
 }
