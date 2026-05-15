@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>15 Second Counter</title>
+  <style>
+    #counter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="counter">10</div>
+
+  <script>
+    const timer = document.querySelector('#counter');
+    let timeleft = 10;
+    setInterval(()=>{
+        
+        timer.textContent=timeleft;
+        timeleft--;
+
+        if(timeleft<=0) {
+            timeleft = 10;
+            setInterval();
+        }
+    },1000);
+
+
+    // let timeLeft = 15;
+    // const counterElement = document.getElementById("counter");
+
+    // const timer = setInterval(() => {
+    //   timeLeft--;
+    //   counterElement.textContent = timeLeft;
+
+    //   if (timeLeft <= 0) {
+    //     clearInterval(timer);
+    //     counterElement.textContent = "Time’s up!";
+    //   }
+    // }, 1000);
+  </script>
+</body>
+</html>
